@@ -5,16 +5,16 @@ void setup() {
 
 void loop() {
   // keeping frequency at 100 Hz
-  /*for(int i=0; i<100; i=i+10){
+  for(int i=0; i<100; i=i+1){
     dimmer(100, i);
   }
-  for(int i=100; i>0; i=i-10){
+  for(int i=100; i>0; i=i-1){
     dimmer(100, i);
-  }*/
+  }
 
   // changing frequency
-  for(int i=10; i<10000; i=i+10){
-    dimmer(i, 100);
+  for(int i=10000; i>1; i-=1){
+    dimmer(i, 50);
   }  
     digitalWrite(LED_BUILTIN, LOW);
     delay(1000);
