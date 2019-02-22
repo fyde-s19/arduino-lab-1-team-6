@@ -1,11 +1,15 @@
 a.Why do embedded systems need a setup and a loop?
+-The setup initializes environment variables, while the loop allows the system to respond to the outside world in real-time.
 
 
 
 b.Why does our code need to be compiled?
-
+-Since our embedded system executes in machine code, our human code needs to be translated into a language that the computer can understand.
 
 
 
 c.When lowering the frequency in step four, what is going wrong? Brainstormsome solutions. 
 Dimmers exist in the real world. What is their solution?
+-We noticed that lowering the frequency on the dimmer (with constant 50% duty cycle) would cause it to flash rapidly (and then slowly).
+This is because our eyes began to pick up on the rapid changes in the blinking of the LED. In the real world, engineers would usually
+keep the frequency sufficiently high such that humans don't notice the rapid changes in LED. 
